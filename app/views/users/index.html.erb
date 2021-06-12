@@ -1,0 +1,12 @@
+<div class="px-5">
+  <h1>Пользователи</h1>
+</div>
+
+<nav class="px-5">
+  <% @users.each_with_index do |user, index| %>
+    <%= index + 1 %>
+	<%= user.name %>
+	<%= user.email %><br />
+  <% end %>
+<%= link_to "Back", :back %>
+</nav>

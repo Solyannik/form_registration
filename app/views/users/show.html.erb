@@ -1,0 +1,18 @@
+<div class="px-5">
+  <h1>Данные пользователя</h1>
+</div>
+<nav class="px-5">
+<%= @user.name %>
+<%= @user.email %><br />
+Confirm gender:
+
+<%= form_for(:confirm_gender) do |f| %>
+    <div class="field">
+        <%= f.label "Confirm gender" %> <br />
+        <%= f.check_box :gender, {}, true, false %> <br />
+    </div><br />
+    <%= f.submit "Подтвердить", class: "button small radius" %>
+  
+<% end %>
+<%= link_to "Back", :back %>
+</nav>
