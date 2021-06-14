@@ -1,24 +1,26 @@
-# README
+# Форма для регистрации
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Ruby version 3.0.1 
 
-Things you may want to cover:
+Rails version 6.1.3.2
 
-* Ruby version
+Проект представляет собой простую форму регистрации, где пользователь
+вводит email, ФИО и пароль с подтверждением.
+После успешной регистрации он попадает на страницу где отображаются
+данные которые он ввел на форме и к этим данным добавляется вывод его
+пола, который был определен по ФИО, использую сервис https://dadata.ru/
+Админ может просматривать список всех
+зарегистрированных пользователей.
 
-* System dependencies
+Установка
 
-* Configuration
+git clone git@github.com:Solyannik/form_registration.git
 
-* Database creation
+Перед запуском выполнить
 
-* Database initialization
+bundle install
+bundle exec rails webpacker:install
+yarn add bootstrap@5 jquery popper.js
+bundle exec rails db:migrate
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Использовались rspec, devise, bootstrap.
