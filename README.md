@@ -19,8 +19,11 @@ git clone git@github.com:Solyannik/form_registration.git
 Перед запуском выполнить
 
 bundle install
+
 bundle exec rails webpacker:install
+
 yarn add bootstrap@5 jquery popper.js
+
 bundle exec rails db:migrate
 
 Использовались rspec, devise, bootstrap.
