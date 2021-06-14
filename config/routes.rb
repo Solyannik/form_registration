@@ -5,5 +5,5 @@ Rails.application.routes.draw do
     root :to => 'devise/registrations#new'
   end
 
-  resources :users
+  resources :users, only: [:index, :show]
 end
